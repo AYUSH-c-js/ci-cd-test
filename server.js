@@ -19,6 +19,12 @@ app.get("/users", (req, res) => {
   })
 })
 
+app.get("/products", (req, res) => {
+  res.json({
+    products: ["Laptop", "Phone", "Tablet"]
+  })
+});
+
 const PORT = 3000
 
 app.listen(PORT, () => {
